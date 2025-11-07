@@ -101,6 +101,7 @@ header .options a:hover{
   font-weight: 700;
   font-size: 1.3rem;
   background-color: #e58233;
+  color: white;
   border: none;
   border-radius: 13px;
   width: auto;
@@ -157,6 +158,7 @@ header .options a:hover{
 .pets div{
   display: flex;
   flex-direction: column;
+  align-items: center;
   color: black;
   background-color: #F2F2F2;
   padding: 10px;
@@ -164,12 +166,14 @@ header .options a:hover{
   height: 350px;
   margin: 50px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-  
+  overflow: hidden;
 }
 
 .pets div img{
-  height: 250px;
-  width: 250px;
+  width: 100%; 
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  object-position: center;
 }
 
 .pets .name {
@@ -264,7 +268,7 @@ header .options{
 }
 
 .pets .name {
-  font-size: 1.3rem;
+  font-size: 1.0rem;
   font-weight: 500;
   margin-bottom: 0px;
 }
