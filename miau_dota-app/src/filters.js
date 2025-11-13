@@ -10,7 +10,7 @@ const btnFiltrar = document.getElementById("filtrar");
 
 btnFiltrar.addEventListener("click", (event) => {
   popup.style.display = "flex";
-  btnFiltrar.style.backgroundColor = "#EEE7D4";
+  btnFiltrar.style.backgroundColor = "#e58233";
 });
 
 //Fechar pop-up

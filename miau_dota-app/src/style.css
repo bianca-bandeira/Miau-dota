@@ -15,7 +15,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #FCF9F3;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -23,9 +23,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-body {
-  background-color: #fcf9f3;
-  font-family: "Segoe UI", sans-serif, fredoka;
+body{
+  background-color: #FCF9F3;
+  font-family:fredoka, 'Segoe UI', sans-serif; 
   font-weight: 400;
   margin: 0;
   padding: 0;
@@ -116,7 +116,7 @@ header .options a:hover {
 
 .filtros {
   margin-top: 30px;
-  margin-left: 20px;
+  margin-left: 56px;
 }
 
 #filtrar {
@@ -127,13 +127,13 @@ header .options a:hover {
   border: 1px;
   border-style: solid;
   border-radius: 80px;
-  border-color: #c4c1c1;
-  background-color: transparent;
+  border-color: #e58233;
+  background-color: #e58233;
   font-size: medium;
   padding: 10px;
   margin-top: 30px;
-  margin-left: 20px;
-  color: #000000;
+  margin-left: 60px;
+  color: #fff;;
 }
 
 #filtrar-icone {
@@ -143,7 +143,7 @@ header .options a:hover {
 }
 
 .popup {
-  margin-left: 20px;
+  margin-left: 60px;
   margin-top: 5px;
   display: none;
   flex-direction: column;
@@ -235,8 +235,8 @@ header .options a:hover {
 }
 
 /*------------PETS-------------*/
-.pets {
-  margin-top: none;
+.pets{
+  margin-top: -15px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-content: center;
@@ -265,6 +265,10 @@ header .options a:hover {
   object-position: center;
 }
 
+.pets a {
+  text-decoration: none;
+}
+
 .pets .name {
   font-size: 1.5rem;
   font-weight: 500;
@@ -276,12 +280,74 @@ header .options a:hover {
   font-size: 1.3rem;
 }
 
-.pets #pata1 {
+.pets .pata1 {
   width: 75px;
   position: relative;
   bottom: 20%;
   left: 50%;
   transform: rotate(350deg);
+}
+
+/*-----------DETAILS PET---------*/
+.infos-pet {
+  margin: 30px;
+  display: flex;
+  color: #452824;
+}
+
+.infos-pet .foto-pet {
+  background-color: #fff;
+  height: 400px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.infos-pet .foto-pet #pet-image {
+  margin: 10px;
+  width: 300px;
+}
+
+.infos-pet .foto-pet #pata1 {
+  width: 90px;
+  position: relative;
+  left: 83%;
+  transform: rotate(343deg);
+}
+
+.infos-pet .dados-pet {
+  padding-left: 60px;
+}
+
+.infos-pet .dados-pet  h2{
+  margin: 0px;
+  font-size: 5rem;
+  font-weight: 500;
+}
+
+.infos-pet .dados-pet h3 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin: 0px;
+  padding-right: 10px;
+}
+
+.infos-pet .dados-pet .idade-sexo {
+  display: flex;
+  font-weight: 300;
+  flex-direction: row; 
+}
+
+.infos-pet .dados-pet button{
+  font-size: 1.3rem;
+  background-color: #452824;
+  border: none;
+  border-radius: 12px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 20px;
+}
+
+.infos-pet .dados-pet #pet-desc {
+  font-size: 1.5rem;
 }
 
 /*-----------FOOTER---------*/
