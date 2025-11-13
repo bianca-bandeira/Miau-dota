@@ -120,7 +120,7 @@ header .options a:hover{
 }
 
 .popup {
-  margin-left: 10px;
+  margin-left: 20px;
   margin-top: 5px;
   display: none;
   flex-direction: column;
@@ -128,7 +128,8 @@ header .options a:hover{
   border-radius: 10px;
   background-color:#ffffff;
   width: 270px;
-  position:absolute;
+  position: absolute;
+  z-index: 1; /* indica camada mais alta */
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -297,19 +298,6 @@ header .options{
   gap: 20px;
 }
 
-.filters {
-  justify-content: center;
-  margin: 20px 10px 10px 20px;
-}
-
-.filters button {
-  margin-left: 5px;
-  margin-right:5px;
-  font-weight: 700;
-  font-size: 1.15rem;
-  padding: 5px 10px 5px 10px;
-}
-
 .pets{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -344,9 +332,76 @@ header .options{
 }
 
 .pets #pata1 {
-  width: 60px;
-  bottom: 50px;
-  left: 120px;
+  width: 55px;
+  bottom: 40px;
+  left: 85px;
+}
+
+}
+
+@media (max-width: 600px) {
+  header{
+  flex-direction: column;
+}
+
+header #logo{
+  width: 100px;
+  margin-top: 5px;
+}
+
+header #dog1 {
+  height: 40px;
+  top: 5px;
+}
+
+header .options{
+  align-items: center;
+  margin-top: 12px;
+  gap: 20px;
+}
+
+
+.pets{
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+  place-items: center;
+}
+
+.pets div{
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  width: 150px;
+  height: 230px;
+  margin: 50px;  
+}
+
+.pets div img{
+  height: 200px;
+  width: 200px;
+}
+
+.pets .name {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 0px;
+}
+
+.pets .infos-pet {
+  margin-top: 0px;
+  font-size: 1.3rem;
+}
+
+.pets #pata1 {
+  width: 55px;
+  bottom: 60px;
+  left: 85px;
+}
+
+.popup {
+  width: 90%;
 }
 
 }

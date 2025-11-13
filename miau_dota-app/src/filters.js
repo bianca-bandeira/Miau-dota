@@ -78,7 +78,7 @@ function filtrarPets(lista) {
 
   //join junta cards sem vírgula entre eles
   petcard.innerHTML = filtrados.map(createPet).join("");
-}
+} 
 
 //Buscar
 const buscar = document.getElementById("buscar");
