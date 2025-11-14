@@ -273,24 +273,30 @@ header .options a:hover {
 
 .pets a {
   text-decoration: none;
+  height: 100%;
 }
 
 .pets .name {
   font-size: 1.5rem;
   font-weight: 500;
   margin-bottom: 0px;
+  text-decoration: none;
+  color: #452824;
+  text-align: center;
 }
 
 .pets .infos-pet {
   margin-top: 0px;
   font-size: 1.3rem;
+  justify-content: center;
+  align-items: center;
 }
 
 .pets .pata1 {
   width: 75px;
   position: relative;
-  bottom: 20%;
-  left: 50%;
+  bottom: 22%;
+  left: 86%;
   transform: rotate(350deg);
 }
 
