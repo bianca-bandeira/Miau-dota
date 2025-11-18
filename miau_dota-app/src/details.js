@@ -17,6 +17,6 @@ if (pet) {
     document.getElementById('pet-sexo').textContent = pet.sexo
     document.getElementById('pet-age').textContent = pet.age;
   } else {
-    document.body.innerHTML = '<h1 class="pet-não-encontrado">Pet não encontrado!</h1>';
+    document.body.innerHTML = '<h1 style="color:black;"class="pet-não-encontrado">Pet não encontrado!</h1>';
   }
 
