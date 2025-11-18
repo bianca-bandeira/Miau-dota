@@ -3,13 +3,13 @@ import "./style.css";
 const events = [
   {
     id: "1",
-    image: "../public/imgs/miaudota/evento1.png",
+    image: "../imgs/miaudota/evento1.png",
     name: "ONG Adota Aí",
     local: "Rua dos Bobos, 0",
   },
   {
     id: "2",
-    image: "../public/imgs/miaudota/evento2.png",
+    image: "../imgs/miaudota/evento2.png",
     name: "ONG Adota Ali",
     local: "Rua dos Bobos, 0",
   },
