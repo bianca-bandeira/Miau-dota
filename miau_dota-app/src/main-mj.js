@@ -9,7 +9,6 @@ export function CreatVet(vet){
         <p class="name">${vet.name}</p>
         <p class="specialty">${vet.specialty}</p>
         <p class="location">${vet.location}</p>
-        <img src="../imgs/miaujuda/estetoscopio.png" alt="estetoscopio" class="estetoscopio">
     </div>
     </a>
     `;
